@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #25252d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analog-clock{
+    background: #2d2f41;
+    position: relative;
+    width: 460px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* box-shadow: 0 5px 25px rgba(18, 105, 236, 0.8); */
+    box-shadow: 0 5px 25px rgba(10, 233, 185, 0.8);
+}
+
+.analog-clock ul{
+    list-style: none;
+}
+
+.hour-container{
+    width: 460px;
+}
+
+.hour-numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour-numbers li{
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+
+.hour-numbers .num{
+    color: rgba(18, 210, 236, 0.8);
+    font-size: 1.6em;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.hour-numbers li:nth-child(1){
+    transform: rotate(30deg);
+}
+
+.hour-numbers li:nth-child(2){
+    transform: rotate(60deg);
+}
+
+.hour-numbers li:nth-child(3){
+    transform: rotate(90deg);
+}
+
+.hour-numbers li:nth-child(4){
+    transform: rotate(120deg);
+}
+
+.hour-numbers li:nth-child(5){
+    transform: rotate(150deg);
+}
+
+.hour-numbers li:nth-child(6){
+    transform: rotate(180deg);
+}
+
+.hour-numbers li:nth-child(7){
+    transform: rotate(210deg);
+}
+
+.hour-numbers li:nth-child(8){
+    transform: rotate(240deg);
+}
+
+.hour-numbers li:nth-child(9){
+    transform: rotate(270deg);
+}
+
+.hour-numbers li:nth-child(10){
+    transform: rotate(300deg);
+}
+
+.hour-numbers li:nth-child(11){
+    transform: rotate(330deg);
+}
+
+.hour-numbers li:nth-child(12){
+    transform: rotate(360deg);
+}
+
+
+
+
+
+
+.hour-numbers li:nth-child(1) .num{
+    transform: rotate(-30deg);
+}
+
+.hour-numbers li:nth-child(2) .num{
+    transform: rotate(-60deg);
+}
+
+.hour-numbers li:nth-child(3) .num{
+    transform: rotate(-90deg);
+}
+
+.hour-numbers li:nth-child(4) .num{
+    transform: rotate(-120deg);
+}
+
+.hour-numbers li:nth-child(5) .num{
+    transform: rotate(-150deg);
+}
+
+.hour-numbers li:nth-child(6) .num{
+    transform: rotate(-180deg);
+}
+
+.hour-numbers li:nth-child(7) .num{
+    transform: rotate(-210deg);
+}
+
+.hour-numbers li:nth-child(8) .num{
+    transform: rotate(-240deg);
+}
+
+.hour-numbers li:nth-child(9) .num{
+    transform: rotate(-270deg);
+}
+
+.hour-numbers li:nth-child(10) .num{
+    transform: rotate(-300deg);
+}
+
+.hour-numbers li:nth-child(11) .num{
+    transform: rotate(-330deg);
+}
+
+.hour-numbers li:nth-child(12) .num{
+    transform: rotate(-360deg);
+}
+
+.hands-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hand{
+    z-index: 888;
+    position: absolute;
+}
+
+.hr-hand{
+    width: 12px;
+    height: 260px;
+}
+
+.hr-hand:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(180deg, #ff4dff, #5fff6c);
+    border-radius: 20px;
+}
+
+.min-hand{
+    width: 8px;
+    height: 320px;
+}
+
+.min-hand:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(180deg, #ff539a, #ffb960);
+    border-radius: 20px;
+}
+
+.sec-hand{
+    width: 5px;
+    height: 335px;
+}
+
+.sec-hand:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(180deg, #08b8a9, #d619b7);
+    border-radius: 20px;
+}
+
+.center-dot{
+    position: absolute;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 7px solid #2d2f41;
+}
